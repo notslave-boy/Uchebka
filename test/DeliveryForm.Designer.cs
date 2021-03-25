@@ -145,7 +145,7 @@ namespace test
             this.Controls.Add(this.SaveBtn);
             this.Controls.Add(this.dataGridView1);
             this.Name = "DeliveryForm";
-            this.Text = "DeliveryForm";
+            this.Text = "Доставка";
             this.Load += new System.EventHandler(this.DeliveryForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.deliveryBindingSource)).EndInit();

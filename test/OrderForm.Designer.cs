@@ -169,7 +169,7 @@ namespace test
             this.Controls.Add(this.SaveBtn);
             this.Controls.Add(this.dataGridView1);
             this.Name = "OrderForm";
-            this.Text = "OrderForm";
+            this.Text = "Заказ";
             this.Load += new System.EventHandler(this.OrderForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.orderedBindingSource)).EndInit();

@@ -134,7 +134,7 @@ namespace test
             this.Controls.Add(this.AddBtn);
             this.Controls.Add(this.groupBox1);
             this.Name = "AddFormDelivery";
-            this.Text = "AddFormDelivery";
+            this.Text = "Новая доставка";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);

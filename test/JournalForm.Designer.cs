@@ -31,21 +31,21 @@ namespace test
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.eShopDataSet = new test.EShopDataSet();
-            this.journalBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.journalTableAdapter = new test.EShopDataSetTableAdapters.JournalTableAdapter();
             this.jIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.jCLIENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.jNUMDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.jSUMDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.jDATEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.journalBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.eShopDataSet = new test.EShopDataSet();
+            this.journalTableAdapter = new test.EShopDataSetTableAdapters.JournalTableAdapter();
             this.SearchBtn = new System.Windows.Forms.Button();
             this.CloseBtn = new System.Windows.Forms.Button();
             this.AddBtn = new System.Windows.Forms.Button();
             this.SaveBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.eShopDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.journalBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eShopDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -64,20 +64,6 @@ namespace test
             this.dataGridView1.Size = new System.Drawing.Size(641, 150);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.UserDeletingRow += new System.Windows.Forms.DataGridViewRowCancelEventHandler(this.dataGridView1_UserDeletingRow);
-            // 
-            // eShopDataSet
-            // 
-            this.eShopDataSet.DataSetName = "EShopDataSet";
-            this.eShopDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // journalBindingSource
-            // 
-            this.journalBindingSource.DataMember = "Journal";
-            this.journalBindingSource.DataSource = this.eShopDataSet;
-            // 
-            // journalTableAdapter
-            // 
-            this.journalTableAdapter.ClearBeforeFill = true;
             // 
             // jIDDataGridViewTextBoxColumn
             // 
@@ -109,6 +95,20 @@ namespace test
             this.jDATEDataGridViewTextBoxColumn.DataPropertyName = "J_DATE";
             this.jDATEDataGridViewTextBoxColumn.HeaderText = "Дата-время";
             this.jDATEDataGridViewTextBoxColumn.Name = "jDATEDataGridViewTextBoxColumn";
+            // 
+            // journalBindingSource
+            // 
+            this.journalBindingSource.DataMember = "Journal";
+            this.journalBindingSource.DataSource = this.eShopDataSet;
+            // 
+            // eShopDataSet
+            // 
+            this.eShopDataSet.DataSetName = "EShopDataSet";
+            this.eShopDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // journalTableAdapter
+            // 
+            this.journalTableAdapter.ClearBeforeFill = true;
             // 
             // SearchBtn
             // 
@@ -161,11 +161,11 @@ namespace test
             this.Controls.Add(this.SaveBtn);
             this.Controls.Add(this.dataGridView1);
             this.Name = "JournalForm";
-            this.Text = "JournalForm";
+            this.Text = "Журнал";
             this.Load += new System.EventHandler(this.JournalForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.eShopDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.journalBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eShopDataSet)).EndInit();
             this.ResumeLayout(false);
 
         }
