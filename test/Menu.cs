@@ -56,5 +56,12 @@ namespace test
             of.Owner = this;
             of.Show();
         }
+
+        private void cbMenu_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            View1 view1 = new View1();
+            view1.Owner = this;
+            view1.Show();
+        }
     }
 }

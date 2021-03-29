@@ -19,6 +19,8 @@ namespace test
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "eShopDataSet1.OrderedClients". При необходимости она может быть перемещена или удалена.
+            this.orderedClientsTableAdapter.Fill(this.eShopDataSet1.OrderedClients);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "eShopDataSet.Assortment". При необходимости она может быть перемещена или удалена.
             this.assortmentTableAdapter.Fill(this.eShopDataSet.Assortment);
 

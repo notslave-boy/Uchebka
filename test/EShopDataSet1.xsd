@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="EShopDataSet1" targetNamespace="http://tempuri.org/EShopDataSet1.xsd" xmlns:mstns="http://tempuri.org/EShopDataSet1.xsd" xmlns="http://tempuri.org/EShopDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="EShopConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="EShopConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.test.Properties.Settings.GlobalReference.Default.EShopConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="OrderedClientsTableAdapter" GeneratorDataComponentClassName="OrderedClientsTableAdapter" Name="OrderedClients" UserDataComponentName="OrderedClientsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="EShopConnectionString (Settings)" DbObjectName="EShop.dbo.OrderedClients" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Клиент, Товар, [Сумма заказа] FROM dbo.OrderedClients</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Клиент" DataSetColumn="Клиент" />
+              <Mapping SourceColumn="Товар" DataSetColumn="Товар" />
+              <Mapping SourceColumn="Сумма заказа" DataSetColumn="Сумма заказа" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="EShopDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="EShopDataSet1" msprop:Generator_UserDSName="EShopDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="OrderedClients" msprop:Generator_TableClassName="OrderedClientsDataTable" msprop:Generator_TableVarName="tableOrderedClients" msprop:Generator_TablePropName="OrderedClients" msprop:Generator_RowDeletingName="OrderedClientsRowDeleting" msprop:Generator_RowChangingName="OrderedClientsRowChanging" msprop:Generator_RowEvHandlerName="OrderedClientsRowChangeEventHandler" msprop:Generator_RowDeletedName="OrderedClientsRowDeleted" msprop:Generator_UserTableName="OrderedClients" msprop:Generator_RowChangedName="OrderedClientsRowChanged" msprop:Generator_RowEvArgName="OrderedClientsRowChangeEvent" msprop:Generator_RowClassName="OrderedClientsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Клиент" msprop:Generator_ColumnVarNameInTable="columnКлиент" msprop:Generator_ColumnPropNameInRow="Клиент" msprop:Generator_ColumnPropNameInTable="КлиентColumn" msprop:Generator_UserColumnName="Клиент">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Товар" msprop:Generator_ColumnVarNameInTable="columnТовар" msprop:Generator_ColumnPropNameInRow="Товар" msprop:Generator_ColumnPropNameInTable="ТоварColumn" msprop:Generator_UserColumnName="Товар">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Сумма_x0020_заказа" msprop:Generator_ColumnVarNameInTable="columnСумма_заказа" msprop:Generator_ColumnPropNameInRow="Сумма_заказа" msprop:Generator_ColumnPropNameInTable="Сумма_заказаColumn" msprop:Generator_UserColumnName="Сумма заказа" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

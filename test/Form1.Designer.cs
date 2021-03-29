@@ -31,10 +31,6 @@ namespace test
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.aIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.aNAMEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.aCOSTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.aCOUNTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.assortmentBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.eShopDataSet = new test.EShopDataSet();
             this.assortmentTableAdapter = new test.EShopDataSetTableAdapters.AssortmentTableAdapter();
@@ -42,9 +38,18 @@ namespace test
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.eShopDataSet1 = new test.EShopDataSet1();
+            this.orderedClientsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.orderedClientsTableAdapter = new test.EShopDataSet1TableAdapters.OrderedClientsTableAdapter();
+            this.aIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.aNAMEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.aCOSTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.aCOUNTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.assortmentBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.eShopDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eShopDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.orderedClientsBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -57,36 +62,11 @@ namespace test
             this.aCOSTDataGridViewTextBoxColumn,
             this.aCOUNTDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.assortmentBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(48, 12);
+            this.dataGridView1.Location = new System.Drawing.Point(28, 12);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(651, 198);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.UserDeletingRow += new System.Windows.Forms.DataGridViewRowCancelEventHandler(this.dataGridView1_UserDeletingRow);
-            // 
-            // aIDDataGridViewTextBoxColumn
-            // 
-            this.aIDDataGridViewTextBoxColumn.DataPropertyName = "A_ID";
-            this.aIDDataGridViewTextBoxColumn.HeaderText = "ID";
-            this.aIDDataGridViewTextBoxColumn.Name = "aIDDataGridViewTextBoxColumn";
-            this.aIDDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // aNAMEDataGridViewTextBoxColumn
-            // 
-            this.aNAMEDataGridViewTextBoxColumn.DataPropertyName = "A_NAME";
-            this.aNAMEDataGridViewTextBoxColumn.HeaderText = "Наименование";
-            this.aNAMEDataGridViewTextBoxColumn.Name = "aNAMEDataGridViewTextBoxColumn";
-            // 
-            // aCOSTDataGridViewTextBoxColumn
-            // 
-            this.aCOSTDataGridViewTextBoxColumn.DataPropertyName = "A_COST";
-            this.aCOSTDataGridViewTextBoxColumn.HeaderText = "Стоимость";
-            this.aCOSTDataGridViewTextBoxColumn.Name = "aCOSTDataGridViewTextBoxColumn";
-            // 
-            // aCOUNTDataGridViewTextBoxColumn
-            // 
-            this.aCOUNTDataGridViewTextBoxColumn.DataPropertyName = "A_COUNT";
-            this.aCOUNTDataGridViewTextBoxColumn.HeaderText = "Количество";
-            this.aCOUNTDataGridViewTextBoxColumn.Name = "aCOUNTDataGridViewTextBoxColumn";
             // 
             // assortmentBindingSource
             // 
@@ -142,6 +122,45 @@ namespace test
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // eShopDataSet1
+            // 
+            this.eShopDataSet1.DataSetName = "EShopDataSet1";
+            this.eShopDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // orderedClientsBindingSource
+            // 
+            this.orderedClientsBindingSource.DataMember = "OrderedClients";
+            this.orderedClientsBindingSource.DataSource = this.eShopDataSet1;
+            // 
+            // orderedClientsTableAdapter
+            // 
+            this.orderedClientsTableAdapter.ClearBeforeFill = true;
+            // 
+            // aIDDataGridViewTextBoxColumn
+            // 
+            this.aIDDataGridViewTextBoxColumn.DataPropertyName = "A_ID";
+            this.aIDDataGridViewTextBoxColumn.HeaderText = "A_ID";
+            this.aIDDataGridViewTextBoxColumn.Name = "aIDDataGridViewTextBoxColumn";
+            this.aIDDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // aNAMEDataGridViewTextBoxColumn
+            // 
+            this.aNAMEDataGridViewTextBoxColumn.DataPropertyName = "A_NAME";
+            this.aNAMEDataGridViewTextBoxColumn.HeaderText = "A_NAME";
+            this.aNAMEDataGridViewTextBoxColumn.Name = "aNAMEDataGridViewTextBoxColumn";
+            // 
+            // aCOSTDataGridViewTextBoxColumn
+            // 
+            this.aCOSTDataGridViewTextBoxColumn.DataPropertyName = "A_COST";
+            this.aCOSTDataGridViewTextBoxColumn.HeaderText = "A_COST";
+            this.aCOSTDataGridViewTextBoxColumn.Name = "aCOSTDataGridViewTextBoxColumn";
+            // 
+            // aCOUNTDataGridViewTextBoxColumn
+            // 
+            this.aCOUNTDataGridViewTextBoxColumn.DataPropertyName = "A_COUNT";
+            this.aCOUNTDataGridViewTextBoxColumn.HeaderText = "A_COUNT";
+            this.aCOUNTDataGridViewTextBoxColumn.Name = "aCOUNTDataGridViewTextBoxColumn";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -158,6 +177,8 @@ namespace test
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.assortmentBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.eShopDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eShopDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.orderedClientsBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -172,6 +193,9 @@ namespace test
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
+        private EShopDataSet1 eShopDataSet1;
+        private System.Windows.Forms.BindingSource orderedClientsBindingSource;
+        private EShopDataSet1TableAdapters.OrderedClientsTableAdapter orderedClientsTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn aIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn aNAMEDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn aCOSTDataGridViewTextBoxColumn;

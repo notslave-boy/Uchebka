@@ -41,6 +41,8 @@ namespace test
             this.button2 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
+            this.cbMenu = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -157,11 +159,33 @@ namespace test
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // cbMenu
+            // 
+            this.cbMenu.FormattingEnabled = true;
+            this.cbMenu.Items.AddRange(new object[] {
+            "Заказы-Клиенты"});
+            this.cbMenu.Location = new System.Drawing.Point(540, 106);
+            this.cbMenu.Name = "cbMenu";
+            this.cbMenu.Size = new System.Drawing.Size(121, 21);
+            this.cbMenu.TabIndex = 12;
+            this.cbMenu.SelectedIndexChanged += new System.EventHandler(this.cbMenu_SelectedIndexChanged);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(542, 76);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(44, 13);
+            this.label7.TabIndex = 13;
+            this.label7.Text = "Отчёты";
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.cbMenu);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.label5);
@@ -195,5 +219,7 @@ namespace test
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.ComboBox cbMenu;
+        private System.Windows.Forms.Label label7;
     }
 }
