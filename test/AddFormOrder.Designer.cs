@@ -32,16 +32,16 @@ namespace test
             this.CloseBtn = new System.Windows.Forms.Button();
             this.AddBtn = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.tbNum = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.tbDate = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.tbSum = new System.Windows.Forms.TextBox();
             this.tbClient = new System.Windows.Forms.TextBox();
             this.tbProd = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.tbDate = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.tbNum = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,6 +53,7 @@ namespace test
             this.CloseBtn.TabIndex = 10;
             this.CloseBtn.Text = "Закрыть";
             this.CloseBtn.UseVisualStyleBackColor = true;
+            this.CloseBtn.Click += new System.EventHandler(this.CloseBtn_Click);
             // 
             // AddBtn
             // 
@@ -82,6 +83,38 @@ namespace test
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Добавление записи";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(84, 207);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(109, 13);
+            this.label5.TabIndex = 9;
+            this.label5.Text = "Номер отправления";
+            // 
+            // tbNum
+            // 
+            this.tbNum.Location = new System.Drawing.Point(217, 204);
+            this.tbNum.Name = "tbNum";
+            this.tbNum.Size = new System.Drawing.Size(157, 20);
+            this.tbNum.TabIndex = 8;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(83, 171);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(68, 13);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "Дата-время";
+            // 
+            // tbDate
+            // 
+            this.tbDate.Location = new System.Drawing.Point(217, 168);
+            this.tbDate.Name = "tbDate";
+            this.tbDate.Size = new System.Drawing.Size(157, 20);
+            this.tbDate.TabIndex = 6;
             // 
             // label3
             // 
@@ -130,38 +163,6 @@ namespace test
             this.tbProd.Name = "tbProd";
             this.tbProd.Size = new System.Drawing.Size(157, 20);
             this.tbProd.TabIndex = 0;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(83, 171);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(68, 13);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Дата-время";
-            // 
-            // tbDate
-            // 
-            this.tbDate.Location = new System.Drawing.Point(217, 168);
-            this.tbDate.Name = "tbDate";
-            this.tbDate.Size = new System.Drawing.Size(157, 20);
-            this.tbDate.TabIndex = 6;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(84, 207);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(109, 13);
-            this.label5.TabIndex = 9;
-            this.label5.Text = "Номер отправления";
-            // 
-            // tbNum
-            // 
-            this.tbNum.Location = new System.Drawing.Point(217, 204);
-            this.tbNum.Name = "tbNum";
-            this.tbNum.Size = new System.Drawing.Size(157, 20);
-            this.tbNum.TabIndex = 8;
             // 
             // AddFormOrder
             // 

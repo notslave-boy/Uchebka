@@ -47,7 +47,7 @@ namespace test
         {
             AddFormOrder ao = new AddFormOrder();
             ao.Owner = this;
-            ao.Update();
+            ao.Show();
         }
 
         private void SearchBtn_Click(object sender, EventArgs e)

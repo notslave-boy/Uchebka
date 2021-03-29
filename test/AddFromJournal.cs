@@ -23,8 +23,8 @@ namespace test
             if (main != null)
             {
                 DataRow nRow = main.eShopDataSet.Tables[3].NewRow();
-                int rc = main.dataGridView1.RowCount + 1;
-                nRow[0] = tbID.Text;
+/*                int rc = main.dataGridView1.RowCount + 1;
+*/              nRow[0] = tbID.Text;
                 nRow[1] = tbClient.Text;
                 nRow[2] = tbNum.Text;
                 nRow[3] = tbSum.Text;

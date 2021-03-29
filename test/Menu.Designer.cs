@@ -122,7 +122,7 @@ namespace test
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(88, 267);
+            this.label5.Location = new System.Drawing.Point(88, 319);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(92, 13);
             this.label5.TabIndex = 9;
@@ -130,7 +130,7 @@ namespace test
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(230, 257);
+            this.button2.Location = new System.Drawing.Point(230, 309);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(129, 32);
             this.button2.TabIndex = 8;
@@ -141,7 +141,7 @@ namespace test
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(88, 317);
+            this.label6.Location = new System.Drawing.Point(88, 265);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(38, 13);
             this.label6.TabIndex = 11;
@@ -149,7 +149,7 @@ namespace test
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(230, 307);
+            this.button3.Location = new System.Drawing.Point(230, 255);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(129, 32);
             this.button3.TabIndex = 10;

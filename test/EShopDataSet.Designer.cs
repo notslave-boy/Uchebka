@@ -36,13 +36,13 @@ namespace test {
         
         private global::System.Data.DataRelation relationFK__Journal__J_CLIEN__2B3F6F97;
         
-        private global::System.Data.DataRelation relationFK__Journal__J_ID__2D27B809;
-        
         private global::System.Data.DataRelation relationFK__Journal__J_NUM__2C3393D0;
         
         private global::System.Data.DataRelation relationFK__Ordered__O_NUM__3A81B327;
         
         private global::System.Data.DataRelation relationFK__Ordered__O_PROD__398D8EEE;
+        
+        private global::System.Data.DataRelation relationFK__Journal__J_ID__2D27B809;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
@@ -301,10 +301,10 @@ namespace test {
                 }
             }
             this.relationFK__Journal__J_CLIEN__2B3F6F97 = this.Relations["FK__Journal__J_CLIEN__2B3F6F97"];
-            this.relationFK__Journal__J_ID__2D27B809 = this.Relations["FK__Journal__J_ID__2D27B809"];
             this.relationFK__Journal__J_NUM__2C3393D0 = this.Relations["FK__Journal__J_NUM__2C3393D0"];
             this.relationFK__Ordered__O_NUM__3A81B327 = this.Relations["FK__Ordered__O_NUM__3A81B327"];
             this.relationFK__Ordered__O_PROD__398D8EEE = this.Relations["FK__Ordered__O_PROD__398D8EEE"];
+            this.relationFK__Journal__J_ID__2D27B809 = this.Relations["FK__Journal__J_ID__2D27B809"];
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -329,10 +329,6 @@ namespace test {
                         this.tableClients.C_IDColumn}, new global::System.Data.DataColumn[] {
                         this.tableJournal.J_CLIENTColumn}, false);
             this.Relations.Add(this.relationFK__Journal__J_CLIEN__2B3F6F97);
-            this.relationFK__Journal__J_ID__2D27B809 = new global::System.Data.DataRelation("FK__Journal__J_ID__2D27B809", new global::System.Data.DataColumn[] {
-                        this.tableOrdered.O_IDColumn}, new global::System.Data.DataColumn[] {
-                        this.tableJournal.J_IDColumn}, false);
-            this.Relations.Add(this.relationFK__Journal__J_ID__2D27B809);
             this.relationFK__Journal__J_NUM__2C3393D0 = new global::System.Data.DataRelation("FK__Journal__J_NUM__2C3393D0", new global::System.Data.DataColumn[] {
                         this.tableDelivery.D_DEPColumn}, new global::System.Data.DataColumn[] {
                         this.tableJournal.J_NUMColumn}, false);
@@ -345,6 +341,10 @@ namespace test {
                         this.tableAssortment.A_IDColumn}, new global::System.Data.DataColumn[] {
                         this.tableOrdered.O_PRODColumn}, false);
             this.Relations.Add(this.relationFK__Ordered__O_PROD__398D8EEE);
+            this.relationFK__Journal__J_ID__2D27B809 = new global::System.Data.DataRelation("FK__Journal__J_ID__2D27B809", new global::System.Data.DataColumn[] {
+                        this.tableOrdered.O_IDColumn}, new global::System.Data.DataColumn[] {
+                        this.tableJournal.J_IDColumn}, false);
+            this.Relations.Add(this.relationFK__Journal__J_ID__2D27B809);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2391,23 +2391,23 @@ namespace test {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public OrderedRow OrderedRow {
-                get {
-                    return ((OrderedRow)(this.GetParentRow(this.Table.ParentRelations["FK__Journal__J_ID__2D27B809"])));
-                }
-                set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__Journal__J_ID__2D27B809"]);
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public DeliveryRow DeliveryRow {
                 get {
                     return ((DeliveryRow)(this.GetParentRow(this.Table.ParentRelations["FK__Journal__J_NUM__2C3393D0"])));
                 }
                 set {
                     this.SetParentRow(value, this.Table.ParentRelations["FK__Journal__J_NUM__2C3393D0"]);
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public OrderedRow OrderedRow {
+                get {
+                    return ((OrderedRow)(this.GetParentRow(this.Table.ParentRelations["FK__Journal__J_ID__2D27B809"])));
+                }
+                set {
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__Journal__J_ID__2D27B809"]);
                 }
             }
         }
